@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 const postRoute = require('./routes/posts/posts');
 app.use('/posts', postRoute);
 
+const userRoute = require('./routes/users/user');
+app.use('/user', userRoute);
+
 /** Routes */
 app.get('/', (req, res) => {
     res.send('Home');
