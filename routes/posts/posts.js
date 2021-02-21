@@ -21,7 +21,7 @@ router.get('/:postId', async (req, res) => {
     } catch (error) {
         res.json({ message: error });
     }
-})
+});
 
 /** Save post */
 router.post('/', async (req, res) => {
